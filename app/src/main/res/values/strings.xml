@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Sqlite CRUD</string>
+    <array name="departments">
+        <item>Mechanical</item>
+        <item>Software</item>
+        <item>Electrical</item>
+        <item>Computer Science</item>
+        <item>Electronics</item>
+
+    </array>
+</resources>

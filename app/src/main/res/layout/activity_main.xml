@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.oways.sqlitecrud.MainActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_centerVertical="true"
+       android:orientation="vertical"
+       android:padding="16dp"
+       >
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="16dp"
+           android:text="Add new student"
+           android:textAlignment="center"
+           android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/editTextName"
+    android:hint="Enter student name"/>
+       <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:paddingLeft="6dp"
+    android:text="Select Department"
+    />
+       <Spinner
+           android:id="@+id/spinnerDepartment"
+           android:entries="@array/departments"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+       </Spinner>
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/editTextSalary"
+           android:digits="0123456789"
+     android:inputType="number"
+           android:hint="Enter student ID"/>
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@color/colorAccent"
+
+           android:id="@+id/buttonAddEmployee"
+           android:text="add student"/>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/textViewViewEmployees"
+           android:padding="16dp"
+           android:text="View Students"
+           android:textAlignment="center"
+           android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+           android:textStyle="bold"/>
+   </LinearLayout>
+</RelativeLayout>
